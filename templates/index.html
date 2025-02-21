@@ -1,7 +1,33 @@
 {% extends 'base.html' %}
 
-{% block title %}Home - Flask App{% endblock %}
+{% block title %}Asante's Landing Page{% endblock %}
 
 {% block content %}
     <h2>Welcome to my super awesome webpage!</h2>
+    <h3>This webpage culminates the efforts of learning the basics of Flask.
+        <br>In order to create this webpage, I:
+    </h3>
+    <ul>
+        <li>Forked the repository with template Flask code.</li>
+        <li>Cloned the repository locally.</li>
+        <li>Created a Python virtual environment (venv) and installed Flask dependencies.</li>
+        <li>Test the app.</li>
+        <li>Add some personal touches using CSS.</li>
+    </ul>
+    <div id="road-map">
+        <h1 style="color: white;">Road Map</h1>
+        <div id="road-map-cont">
+            <div class="road-map">
+                <p>Git Intro and Terminal Commands</p>
+                <img class="road-icon" src="{{ url_for('static', filename='images/git-icon.png') }}" alt="Git icon">
+            </div>
+            <img src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">
+            <div class="road-map">
+                <p>Flask Intro</p>
+                <img class="road-icon" src="{{ url_for('static', filename='images/flask-icon.png') }}" alt="Flask icon">
+            </div>
+            <img src="{{ url_for('static', filename='images/arrow-right.png') }}" alt="">
+            <div class="road-map"></div>
+        </div>
+    </div>
 {% endblock %}
